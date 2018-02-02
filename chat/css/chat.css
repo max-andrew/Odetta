@@ -1,0 +1,13 @@
+#sheet {
+	text-align: center;
+	margin-top: 2.875em;
+}
+
+#sheet input{
+	font-size: 175%;
+	margin-bottom: .3em;
+}
+
+#sheet input[type=submit]{
+	font-size: 160%;
+}

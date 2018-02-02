@@ -1,0 +1,288 @@
+/* BACKGROUND */
+
+html {
+	background: #F7E8C1;
+	/* no select */
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none; 
+	-moz-user-select: none;      
+	-ms-user-select: none; 
+	user-select: none;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+html, body, h1, h2, h3, h4, a, select, option, li, input, p {
+	font-family: "Avenir Next", "Avant Garde", Arial, sans-serif;
+	color: #04061B /*#F7F7EF*/;
+}
+
+/* TAG STYLING */
+
+h1 {
+	font-weight: 500;
+	font-size: 3em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.204em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.531em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: .980em;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: .551em;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: .245em;
+}
+
+p {
+	font-weight: 400;
+    font-size: 1.25em;
+    line-height: 115%;
+}
+
+select, input, button, textarea {
+	border: none;
+	background-color: #0096D3;
+	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+textarea, input[type=text], input[type=email], input[type=password] {
+	background-color: #F7F7EF;
+}
+
+textarea {
+	resize: none;
+}
+
+button, select, input[type=submit] {
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+select {
+	font-size: 95%;
+	vertical-align: .01em;
+}
+
+input:active, input:focus, 
+select:active, select:focus, 
+button:active, button:focus, 
+textarea:active, textarea:focus {
+    outline: none
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+#header {
+	margin-bottom: .5em;
+	letter-spacing: 1.5em;
+	text-align: left;
+	text-decoration: none;
+}
+
+#header a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* cards */
+
+.card_color_0 {
+	background-color: #F99331;
+}
+
+.card_color_1 {
+	background-color: #82CCD5;
+}
+
+.card_color_2 {
+	background-color: #CCD582;
+}
+
+.card_color_3 {
+	background-color: #D58B82;
+}
+
+.card_color_4 {
+	background-color: #FFFF7B;
+}
+
+.card_color_5 {
+	background-color: #D582CC;
+}
+
+.card_color_6 {
+	background-color: #0096D3;
+}
+
+#deck {
+	text-align: left;
+	list-style: none;
+}
+
+.flex {
+	display: /*inline-*/flex;
+	flex-wrap: wrap;
+}
+
+.card_struct {
+	width: 17em;
+	height: 17em;
+	list-style: none;
+	float: left;
+}
+
+.card_struct button {
+	width: 95%;
+	height: 95%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card_struct button:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card_struct button:hover:active {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card_content {
+	height: 100%;
+	position: relative;
+}
+
+.card_content .title, .text_title  {
+	text-align: left;
+	letter-spacing: .125em;
+	cursor: pointer;
+}
+
+.text_content {
+    top: 27.5%;
+}
+
+.subtitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.status {
+	text-transform: none;
+	font-style: italic;
+}
+
+.copyable {
+	cursor: text;
+	-webkit-user-select: all;
+    -moz-user-select: all; 
+    -ms-user-select: all; 
+    user-select: all;
+}
+
+/* card_struct variations */
+
+.small {
+	width: 8.725em;
+	height: 8.725em;
+	margin-bottom: .33em;
+	display: inline-block;
+}
+
+.long {
+	width: 49.5%;
+	height: 1.25em;
+	margin: 0% .5% .5% 0%;
+}
+
+.long button {
+	width: 100%;
+	height: 100%;
+}
+
+.long .card_content .title {
+	text-align: right;
+	letter-spacing: .25em;
+	cursor: pointer;
+}
+
+.email_card input {
+	height: 2.5em;
+	width: 93.5%;
+	font-size: .75em;
+	margin-bottom: 1.25em;
+}
+
+.email_card textarea {
+	height: 10em;
+	width: 93.5%;
+}
+
+.email_card .em_link {
+	text-decoration: underline;
+	cursor: default;
+	font-size: .75em;
+	margin-bottom: 2.9em;
+}
+
+.email_card button {
+	height: 10%;
+	width: 95%;
+	text-align: right;
+}
+
+.icon {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 33%;
+	width: 33%;
+	background: none;
+}
+
+/* DESKTOP SCREENS */
+
+@media (min-width: 600px) {
+	body {
+		margin: .5em auto 0;
+		width: 80%;
+	}
+
+	#header {
+		text-align: center;
+		cursor: auto;
+	}
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 350px) {
+	#header {
+		letter-spacing: 1em;
+	}
+}

@@ -1,0 +1,19 @@
+#direction {
+	display: inline-block;
+	vertical-align: 25%;
+}
+
+.x_but {
+	display: inline-block;
+	background-color: transparent;
+	margin-bottom: -10em;
+}
+
+.x_img {
+	height: 2.5em;
+}
+
+.unready {
+	background-color: transparent;
+	cursor: auto;
+}
